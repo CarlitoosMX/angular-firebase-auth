@@ -7,7 +7,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { CalendarModule } from 'primeng/calendar';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { TableModule } from 'primeng/table';
+import { CardModule } from 'primeng/card';
+import { DividerModule } from 'primeng/divider';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -53,6 +59,12 @@ firebase.initializeApp(firebaseConfig);
     ReactiveFormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    CalendarModule,
+    TableModule,
+    CardModule,
+    DividerModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [
     ConfirmationResultService,
